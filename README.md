@@ -16,34 +16,48 @@ Un scan de port a pour objectif de m'indiquer quels sont les ports ouverts sur u
 Comment créer un script d'analyse de port en Python.
 Ce script d'analyse de port essaiera de se connecter sur chaque port que vous définissez pour un hôte particulier. La première chose que nous devons faire est d'importer la bibliothèque de sockets dont nous avons besoin.
 
-Ouvrez un éditeur de texte, copiez et collez le code ci-dessous.
-Enregistrez le fichier sous: «scanner_ports.py» et quittez l'éditeur
+# Ouvrez un éditeur de texte, copiez et collez le code ci-dessous.
+# Enregistrez le fichier sous: «scanner_ports.py» et quittez l'éditeur
+  
+  #!/usr/bin/python3
 
-#!/usr/bin/python3
-import socket
-
-def scan(host, port):
-    try:import socket
+  import socket
 
 def scan(host, port):
+
+# Nous avons également mis en place une gestion des erreurs pour détecter les erreurs
+
     try:
+    
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        
         s.connect((host, port))
+        
         s.settimeout(0.5)
+        
     except socket.error:
+    
         return False
+        
     return True
+    
 # Ask for input
 
 host = input('GIVE ME A HOST NAME : ')
 
 # Utilisation de la fonction de plage pour spécifier les ports (ici, il analysera tous les ports entre 1 et 5000)
 
+
 def check_port(host):
+
     for i in range(1, 5000):
+    
         if scan(host, i):
+        
             print('The port :',i,' at :', host,' is open')
+            
         print('The port :',i,' at :', host,' is close')
+        
 
 check_port(host)
 

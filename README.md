@@ -1,5 +1,9 @@
 # scanner-ports-network
-Cet article vous montrera comment vous pouvez créer un petit programme automatiser l'analyse de port de notre reseau facile à utiliser écrit en Python. Il existe de nombreuses façons de faire cela avec Python, et je vais le faire en utilisant le module intégré Socket.
+Cet script a pour but d'automatiser le scan de ports de notre serveurs, router et machines de reseau.
+En informatique, le scan de ports est une technique servant à rechercher les ports ouverts sur un serveur de réseau.
+Cette technique est utilisée par les administrateurs des systèmes informatiques pour contrôler la sécurité des serveurs de leurs réseaux. La même technique est aussi utilisée par les pirates informatiques pour tenter de trouver des failles dans des systèmes informatiques.
+
+Cet article vous montrera comment vous pouvez créer un petit programme d'automatiser l'analyse de port de notre reseau facile à utiliser écrit en Python. Il existe de nombreuses façons de faire cela avec Python, et je vais le faire en utilisant le module intégré Socket.
 
 # Sockets
 

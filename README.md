@@ -1,5 +1,5 @@
 # scanner-ports-network
-Cet script a pour but d'automatiser le scan de ports de notre serveurs, router et machines de reseau.
+Cet script a pour but d'automatiser l'analyse des milliers de ports de notre serveurs, router et machines de reseau en une seconde.
 En informatique, le scan de ports est une technique servant à rechercher les ports ouverts sur un serveur de réseau.
 Cette technique est utilisée par les administrateurs des systèmes informatiques pour contrôler la sécurité des serveurs de leurs réseaux. La même technique est aussi utilisée par les pirates informatiques pour tenter de trouver des failles dans des systèmes informatiques.
 
@@ -65,5 +65,7 @@ def check_port(host):
 
 check_port(host)
 
-    
+Pour la démonstration je l'ai enregistré sous le nom "scanner_ports.py" puis entré la commandre suivante dans le terminal de linux: python3 scanner_ports.py
+Il suffit ensuite de suivre les instructions affichées pour l'utiliser. 
+Le résultat retournes la liste des differents ports ouverts et fermés que le script a découvert.
     
